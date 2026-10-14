@@ -14,4 +14,6 @@ fetch('./data/comidas.json')          // Ruta al archivo JSON
 
 let comidas = [];
 
+// como se me borro todo lolaaaaazooooo
+
 const container = document.getElementById('comidaContainer');
