@@ -3,12 +3,110 @@
     margin: 0;
     padding: 0px;
 }
-
+body {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
 .comida-container {
-
-  
+  width: 100vw;
+  gap: 1rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.card {
+  width: 18vw;
+  min-height: 33vh;
+  padding: 1rem;
+  border: 0.2rem solid #F9CE94;
+  border-radius: 0.5rem;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap:0.7rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card h2 {
+  font-size: 2rem;
+  color: #f3a73c;
+  justify-content: stretch;
+}
+.provincia {
+  font-size: 1.5rem;
+  color: #555;
+}
+.ingredientes {
+  font-size: 0.75rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.categoria {
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.8rem;
+  background-color: #947460;
+  color: #fff5ec;
+  font-size: 1rem;
 }
 
-.card {
-  
+li {
+  margin: .2rem;
+  padding: .2rem;
+  border: 0.1rem solid #f3a73c;
+  border-radius: 3rem;
+  background-color: #f3d9b6;
+}
+
+.addFood {
+  width: auto;
+  gap: 1rem;
+  padding: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border:0.5rem solid #947460 ;
+}
+.tituloform{
+  font-size: 2rem;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap:1rem;
+}
+
+.filtros{
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: #F9CE94;
+}
+.buscador{
+  width: 50%;
+  height: 100%;
+  border: none;
+  padding-left: 1rem;
+  border-radius: 10rem;
+}
+.elegirFiltro{
+  width: 20%;
+  height: 100%;
+  border: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10rem;
 }
