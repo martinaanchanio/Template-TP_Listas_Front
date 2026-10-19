@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comidas Argentinas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="titulodeTODO">Comidas Argentinas</h1>
     <header>
-      <input type="search" id="busqueda" placeholder="Busca una receta">
-      <select id="filtrarCategoria">
-        <option value="">Todas las categorías</option>
-        <option value="Parrilla">Parrilla</option>
-        <option value="Horno">Horno</option>
-        <option value="Frito">Frito</option>
-        <option value="Guiso">Guiso</option>
+      <input class="opciones" type="search" id="busqueda" placeholder="Busca una receta">
+      <select class="filtros" id="filtrarCategoria">
+        <option class="opciones" value="">Todas las categorías</option>
+        <option class="opciones" value="Parrilla">Parrilla</option>
+        <option class="opciones" value="Horno">Horno</option>
+        <option class="opciones" value="Frito">Frito</option>
+        <option class="opciones" value="Guiso">Guiso</option>
       </select>
-      <select id="filtrarProvincia">
-        <option value="">Todas las provincias</option>
-        <option value="Buenos Aires">Buenos Aires</option>
-        <option value="Jujuy">Jujuy</option>
-        <option value="Salta">Salta</option>
-        <option value="Tucumán">Tucumán</option>
-        <option value="Córdoba">Córdoba</option>
-        <option value="Santa Fe">Santa Fe</option>
-        <option value="Entre Rios">Entre Rios</option>
+      <select class="filtros" id="filtrarProvincia">
+        <option class="opciones" value="">Todas las provincias</option>
+        <option class="opciones" value="Buenos Aires">Buenos Aires</option>
+        <option class="opciones" value="Jujuy">Jujuy</option>
+        <option class="opciones" value="Salta">Salta</option>
+        <option class="opciones" value="Tucumán">Tucumán</option>
+        <option class="opciones" value="Córdoba">Córdoba</option>
+        <option class="opciones" value="Santa Fe">Santa Fe</option>
+        <option class="opciones" value="Entre Rios">Entre Rios</option>
       </select>
     </header>
     
@@ -42,7 +48,7 @@
     <section class="addFood">
       <!-- Para el form para agregar comida -->
        <form id="agregarComidaForm">
-        <h2>Agregar Comida</h2>
+        <h2 class="tituloForm">Agregar Comida</h2>
         <label for="nombre">Nombre de la comida</label>
         <input type="text" id="nombre" placeholder="Pon una comida" required>
         <label for="provincia">¿De qué provincia es?</label>

@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+.parisienne-regular {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0px;
+}
+
+.titulodeTODO {
+font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+color: #3c3238;
+justify-content: stretch;
 }
 body {
   width: 100%;
@@ -9,7 +24,13 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center; 
+  background-image: url("./imagenes/fondo-rosa.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh; 
 }
 .comida-container {
   width: 100vw;
@@ -18,25 +39,26 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  
 }
 .card {
   width: 18vw;
   min-height: 33vh;
   padding: 1rem;
-  border: 0.2rem solid #F9CE94;
+  border: 0.2rem solid #b78da1;
   border-radius: 0.5rem;
-  background-color: white;
+  background-color: rgb(251, 188, 214);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap:0.7rem;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Parisienne', cursive;
 }
 .card h2 {
   font-size: 2rem;
-  color: #f3a73c;
+  color: #ffaeec;
   justify-content: stretch;
 }
 .provincia {
@@ -49,11 +71,12 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #ffaeec;
 }
 .categoria {
   padding: 0.2rem 0.6rem;
   border-radius: 0.8rem;
-  background-color: #947460;
+  background-color: #ffaded;
   color: #fff5ec;
   font-size: 1rem;
 }
@@ -70,20 +93,24 @@ li {
   width: auto;
   gap: 1rem;
   padding: 2rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Parisienne', cursive;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border:0.5rem solid #947460 ;
+  border:0.5rem solid pink;
+  border-style: dotted;
+  background-color: #fff5ec;
 }
 .tituloform{
   font-size: 2rem;
+  justify-self: center;
+  color: #a26a85;
 }
 .formulario{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap:1rem;
 }
 
@@ -109,4 +136,16 @@ li {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 10rem;
+}
+
+.opciones {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: #db94cb;
+}
+
+.filtros {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:normal;
+    color: #b381a7;
 }
