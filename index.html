@@ -17,20 +17,11 @@
       <input class="buscador" type="search" id="busqueda" placeholder="Busca una receta">
       <select class="filtros" id="filtrarCategoria">
         <option class="opciones" value="">Todas las categorías</option>
-        <option class="opciones" value="Parrilla">Parrilla</option>
-        <option class="opciones" value="Horno">Horno</option>
-        <option class="opciones" value="Frito">Frito</option>
-        <option class="opciones" value="Guiso">Guiso</option>
+
       </select>
       <select class="filtros" id="filtrarProvincia">
         <option class="opciones" value="">Todas las provincias</option>
-        <option class="opciones" value="Buenos Aires">Buenos Aires</option>
-        <option class="opciones" value="Jujuy">Jujuy</option>
-        <option class="opciones" value="Salta">Salta</option>
-        <option class="opciones" value="Tucumán">Tucumán</option>
-        <option class="opciones" value="Córdoba">Córdoba</option>
-        <option class="opciones" value="Santa Fe">Santa Fe</option>
-        <option class="opciones" value="Entre Rios">Entre Rios</option>
+
       </select>
     </header>
     
@@ -56,7 +47,11 @@
         <label for="categoria">¿Cuál es su categoría?</label>
         <input type="text" id="categoria" placeholder="Pon una categoría" required>
         <label for="ingredientes">¿Cuáles son sus ingredientes (separados por comas)?</label>
-        <input type="text" id="ingredientes" placeholder="Pon los ingredientes">
+        <div class="contenedor-ingredientes">
+          <input class="ingrediente" type="text" id="ingredientes" placeholder="Pon los ingredientes" required>
+      
+        </div>
+        <button type="button" id="botonIngr">Agregar ingrediente</button>        
         <button type="submit">Agregar</button>
        </form>
     </section>

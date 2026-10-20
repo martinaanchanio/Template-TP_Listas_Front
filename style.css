@@ -41,20 +41,21 @@ body {
   flex-wrap: wrap;
   
 }
-.card {
+.producto {
   width: 18vw;
   min-height: 33vh;
   padding: 1rem;
-  border: 0.2rem solid #b78da1;
+  border: 0.2rem solid pink;
   border-radius: 0.5rem;
-  background-color: rgb(251, 188, 214);
-  text-align: center;
+  background-color: #fff5ec;
+  align-items:center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap:0.7rem;
   font-family: 'Parisienne', cursive;
+  color: #422335;
 }
 .card h2 {
   font-size: 2rem;
@@ -138,7 +139,7 @@ li {
   background-color: #fff5ec; 
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
-  foncolor: #ff88c1;
+  color: #ff88c1;
 }
 .elegirFiltro{
   width: 20%;
