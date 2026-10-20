@@ -133,10 +133,10 @@ function actualizarFiltros () {
     }
   })
 
-  categorias.forEach (categorias => {
-    filtrarCategoria.innerHTML += `<option value="${categoria}">${categoria}<`
+  categorias.forEach (categoria => {
+    filtrarCategoria.innerHTML += `<option value="${categoria}">${categoria}♡`
   })
-  provincias.forEach (provincias => {
-    filtrarCategoria.innerHTML += `<option value="${provincia}">${provincia}<`
+  provincias.forEach (provincia => {
+    filtrarProvincia.innerHTML += `<option value="${provincia}">${provincia}♡`
   })
 }
